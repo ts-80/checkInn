@@ -31,7 +31,6 @@ async function collectUserData() {
 //     let result = trat1 + trat2;
 //     return result;
 //   }
-
   function tratData(srt) {
     const ano = srt.substring(0, 4);
     const mes = srt.substring(5, 7);
