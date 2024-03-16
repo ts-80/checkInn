@@ -19,6 +19,14 @@ body {
   background-color: #ff8c00;
 }
 
+#cadForm {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 2fr;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
 #cabecalho {
   display: flex;
   justify-content: center;
@@ -36,13 +44,15 @@ form {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 400px;
+  width: 950px;
   box-shadow: 0px 1px 17px black;
 }
+
 #titulo {
   display: flex;
   justify-content: center;
 }
+
 h2 {
   text-align: center;
   color: #333;
@@ -55,6 +65,7 @@ label {
   display: block;
   margin-bottom: 8px;
   color: #555;
+  width: 150px;
 }
 
 input {
@@ -82,12 +93,26 @@ button {
   cursor: pointer;
   width: 100%;
   margin-top: 10px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+padding-left: 5px;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
+@media screen   and ( max-width: 999px){
+  form{
+    width: 70%;
+  }
+  #cadForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
 @media screen and (max-width: 600px) {
   #logo {
     width: 70vw;
