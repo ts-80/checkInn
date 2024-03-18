@@ -17,6 +17,7 @@ body {
   margin-top: 0;
   padding-top: 0;
   background-color: #ff8c00;
+  height: 100vh;
 }
 
 #cadForm {
