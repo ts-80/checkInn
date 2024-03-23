@@ -18,7 +18,7 @@ body {
   align-items: center;
   padding-top: 0;
   background-color: #ff8c00;
- 
+  height: 100vh;
 }
 
 #cadForm {
@@ -65,7 +65,8 @@ h2 {
 }
 
 label {
-  display: block;
+  display: flex;
+  justify-content: end;
   margin-bottom: 8px;
   color: #555;
   width: 150px;
@@ -82,9 +83,11 @@ input {
 }
 
 #obs {
-  width: 100%;
+  width: 99%;
   padding-left: 5px;
   padding-top: 5px;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
 
 button {
@@ -109,19 +112,30 @@ button:hover {
   form{
     width: 70%;
   }
+  #container{
+    height: 100%;
+  }
   #cadForm{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
   }
+  label{
+    display: block;
+  }
 }
 @media screen and (max-width: 600px) {
   #logo {
     width: 70vw;
   }
-
+  #container{
+    height: 100%;
+  }
   form {
     width: 80%;
+  }
+  label{
+    display: block;
   }
 }
